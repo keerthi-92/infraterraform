@@ -4,7 +4,7 @@ resource "aws_instance" "mySonarInstance" {
       instance_type = "t2.micro"
       vpc_security_group_ids = [aws_security_group.sonar-sg-2022.id]
       tags= {
-        Name = "sonar_instance"
+        Name = "keerthi-sonar_instance"
       }
     }
 
@@ -35,7 +35,7 @@ resource "aws_instance" "mySonarInstance" {
       }
 
       tags= {
-        Name = "security_sonar"
+        Name = "keerthi-security_sonar"
       }
     }
 
@@ -44,6 +44,6 @@ resource "aws_eip" "mySonarInstance" {
   vpc      = true
   instance = aws_instance.mySonarInstance.id
 tags= {
-    Name = "sonar_elastic_ip"
+    Name = "keerthi_elastic_ip"
   }
 }
