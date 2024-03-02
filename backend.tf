@@ -3,6 +3,6 @@ terraform {
     bucket = "keerthi456"
     key = "main"
     region = "ap-south-1"
-    dynamodb_table = "hashtekTerraformStatelock"
+    dynamodb_table = "keerthi"
   }
 }
