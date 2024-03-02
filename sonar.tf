@@ -35,7 +35,7 @@ resource "aws_instance" "mySonarInstance" {
       }
 
       tags= {
-        Name = "keerthi-security_sonar"
+        Name = "security_sonar"
       }
     }
 
