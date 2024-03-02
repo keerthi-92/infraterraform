@@ -20,7 +20,7 @@ variable "security_group" {
 
 variable "tag_name" { 
     description = "Tag Name of for Ec2 instance" 
-    default     = "my-ec2-instance" 
+    default     = "keerthi-ec2-instance" 
 } 
 variable "ami_id" { 
     description = "AMI for Amazon Linux Ec2 instance" 
